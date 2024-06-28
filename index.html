@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Personal Project</title>
+</head>
+<style>
+    .box{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .grid1{
+        display: grid;
+        background-color: black;
+        gap: 5px;
+        grid-template-columns: 44px 105px 120px repeat(3,58px);
+        grid-template-rows: 75px repeat(2,102px) 65px 55px 65px;
+    }
+    .w1{
+        grid-column: span 2;
+    }
+    .y1{
+        grid-column: span 2;
+    }
+    .r1{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .y2{
+        grid-column: span 2;
+    }
+    .w5{
+        grid-row: span 3;
+    }
+    .w6{
+        grid-row: span 2;
+    }
+    .white{
+        background-color: seashell;
+    }
+    .yellow{
+        background-color: #E1C16E;
+    }
+    .red{
+        background-color: #722F37;
+    }
+    .black{
+        background-color: #353935;
+    }
+    .blue{
+        background-color: #6F8FAF;
+        grid-area: span 2/span 2;
+    }
+    .b1{
+        grid-row: span 2;
+    }
+    .w10{
+        grid-column: span 2;
+    }
+    .y3{
+        grid-row: span 2;
+    }
+    .r2{
+        grid-row: span 2;
+    }
+
+</style>
+<style>
+    .triangle{
+        width: 0;
+        height: 0;
+        border-top: 0;
+        border-left: 350px solid transparent;
+        border-right: 350px solid transparent;
+        border-bottom: 489px solid black
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="grid1">
+            <div class="white w1"></div>
+            <div class="white w2"></div>
+            <div class="yellow y1"></div>
+            <div class="white w3"></div>
+            <div class="white w4"></div>
+            <div class="red r1"></div>
+            <div class="yellow y2"></div>
+            <div class="white w5"></div>
+            <div class="white w6"></div>
+            <div class="white w7"></div>
+            <div class="white w8"></div>
+            <div class="black b1"></div>
+            <div class="white w9"></div>
+            <div class="white w10"></div>
+            <div class="yellow y3"></div>
+            <div class="white w11"></div>
+            <div class="blue"></div>
+            <div class="red r2"></div>
+            <div class="white w12"></div>
+            <div class="black b2"></div>
+        </div>
+        <div class="triangle"></div>
+    </div>
+</body>
+</html>
